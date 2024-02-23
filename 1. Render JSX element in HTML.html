@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> imported 2 libraries
+    1. react - UI ni create cheyadaniki
+    2. react-dom - create chesina UI ni html lo insert cheydaniki</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1 id="root"></h1>
+    <h1 id="main"></h1>
+    <script type="text/babel">
+      //using react
+      var el = React.createElement('h1',{},'Welcome to JSX')
+      ReactDOM.render(el,document.getElementById('root'))
+      //using JSX
+      var el1 = <h1>Welcome to JSX</h1>
+      ReactDOM.render(el1,document.getElementById('main'))
+
+
+    </script>
+
+  </body>
+</html>
